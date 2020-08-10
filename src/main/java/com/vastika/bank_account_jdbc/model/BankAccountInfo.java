@@ -40,5 +40,38 @@ public class BankAccountInfo {
 	public void setUniqueIdType(String unique_id_type) {
 		this.unique_id_type = unique_id_type;
 	}
+	/**
+	 * @param id
+	 * @param account_name
+	 * @param address
+	 * @param mobileNo
+	 * @param unique_id_type
+	 */
+	public BankAccountInfo(int id, String account_name, String address, long mobileNo, String unique_id_type) {
+		this.id = id;
+		this.account_name = account_name;
+		this.address = address;
+		this.mobileNo = mobileNo;
+		this.unique_id_type = unique_id_type;
+	}
+	/**
+	 * 
+	 */
+	public BankAccountInfo() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	/**
+	 * @param account_name
+	 * @param address
+	 * @param mobileNo
+	 * @param unique_id_type
+	 */
+	public BankAccountInfo(String account_name, String address, long mobileNo, String unique_id_type) {
+		this.account_name = account_name;
+		this.address = address;
+		this.mobileNo = mobileNo;
+		this.unique_id_type = unique_id_type;
+	}
 
 }
